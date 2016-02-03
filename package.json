@@ -1,0 +1,30 @@
+{
+  "name": "bugtracker",
+  "version": "1.0.0",
+  "description": "Practice application for node, express, mongo and react",
+  "main": "webapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pneni/bugtracker.git"
+  },
+  "keywords": [
+    "Node",
+    "express",
+    "mongo",
+    "react",
+    "chai",
+    "mocha"
+  ],
+  "author": "Padma Neni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pneni/bugtracker/issues"
+  },
+  "homepage": "https://github.com/pneni/bugtracker#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
