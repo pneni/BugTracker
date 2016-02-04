@@ -13,7 +13,7 @@ app.get('/about', function (req, res){
 	res.send ('About Bug Tracker');
 });
 
-app.use(function(){
+app.use(function(req, res, next){
 	res.type ('text/plain');
 	res.status(404);
 	res.send('404 - Not Found');

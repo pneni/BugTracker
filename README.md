@@ -15,3 +15,34 @@ Step 2: Serve it up
 	3.Use webapp.js as the entry point for the node server when you do npm init.
 	4.Create a simple static file server to serve the index.html, which shall be placed under the directory static.
 	5.Run the server using node webapp.js and point your browser to localhost:3000.
+
+"Organize"
+
+Step1: Split HTML and JS
+ 	1. Create a new file App.js along side index.html.
+ 	2.Move the script contents from index.html and use src= to refer to the new file.
+
+ Step2: 
+ 	1. Move App.js to an src folder.
+ 	2. Install babbel-present -react(locally) and babel-cli (globally) 
+
+ "Compose Components"
+
+ Step 1 : Use React createClass
+ 	1.Create a component called BugList which renders just a div with placeholder text. Render this component in the ReactDOM.render() method.
+
+ Step 2: compose components
+    1. Create three classes - BugFilter, BugTable and BugAdd, with place holder text indicating that each section is meant for a filter, a table to list all the bugs, and a form to add a new bug.
+    2. Replace the placeholder in BugList with these three classes.
+
+ Step 3: Communicate between components
+
+    1. Create a new class BugRow for a single table row for a bug, which displays one column each for id, status, priority, owner, title of the bug.
+    2. Create a bordered table with a header
+    3. Add two BugRow instances from within <tbody> of the Bug Table.
+    4. Pass the bug attributes as parameters as props from BugList
+
+Step 4: Dynamic composition
+	1.  create a global array of bugs.
+	2. Pass this as the props variable bugs from the BugList class down to the BugTable class.
+	3. Create an array of <BugRow> classes in the render() function of BugTable based on the passed-in props.bugs, and replace the hard-coded <BugRow>s with this.
