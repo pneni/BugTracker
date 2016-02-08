@@ -67,17 +67,17 @@ var bugData =[
 ];
 
 var BugList= React.createClass({
-	// getIntialState: function() {
-	// 	return {bugs : bugData};
-	// },
+	getInitialState: function() {
+		console.log("this is bug data" + bugData);
+	return {bugs: bugData};
+	},
 	render: function (){
 		return (
 			<div>
 				<h1>Bug Tracker </h1> 
 				<BugFilter />
 				<hr />
-				<BugTable bugs = {bugData}/>
-				//<BugTable bugs = {this.state.bugs};
+				<BugTable bugs ={this.state.bugs}/>
 				<hr />
 				<BugAdd />
 			</div>

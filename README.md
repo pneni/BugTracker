@@ -46,3 +46,11 @@ Step 4: Dynamic composition
 	1.  create a global array of bugs.
 	2. Pass this as the props variable bugs from the BugList class down to the BugTable class.
 	3. Create an array of <BugRow> classes in the render() function of BugTable based on the passed-in props.bugs, and replace the hard-coded <BugRow>s with this.
+
+"Dynamic Update"
+
+Step1: Create initial State
+1. Add getInitialState() function to BugList which returns the global bugs data
+2. Look at the props passed in from BugList to BugTables.Replace this with state
+
+Step2: 
