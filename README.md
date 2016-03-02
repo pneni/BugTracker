@@ -58,19 +58,19 @@ Step 4: Dynamic composition
 
 Step1: Create initial State... 
 
-1. Add getInitialState() function to BugList which returns the global bugs data
-2. Look at the props passed in from BugList to BugTables.Replace this with state
+	1. Add getInitialState() function to BugList which returns the global bugs data
+	2. Look at the props passed in from BugList to BugTables.Replace this with state
 
 Step2: Update the state... 
 
-1. Add Test Button in Buglist which will trigger a test Methodsin the same class on an onclick event.
-2. Add Test Method which call another method addBug()toadd bug,taking object as a parameter.
-3.Add Addbug funciton to copy the current state's bug list, modify it and push the new bug in to the bug list....
-4.Add a console lod message in render().
+	1. Add Test Button in Buglist which will trigger a test Methodsin the same class on an onclick event.
+	2. Add Test Method which call another method addBug()toadd bug,taking object as a parameter.
+	3.Add Addbug funciton to copy the current state's bug list, modify it and push the new bug in to the bug list....
+	4.Add a console lod message in render().
 
 Step3: Communicate Child to parent....
 
-1. Add a form replacing the placeholder text in BugAdd.
-2. Pass addBugg function as a props variable to the BugAdd class.
-3. Remove the test button and its handler. Add Handler( onClick or onSubmit) to the BugAdd class.
-4. In the handler,call the passed-in-props: the addBug function. Create a bug object by looking at the form values the traditional way, i.e using form input values.
+	1. Add a form replacing the placeholder text in BugAdd.
+	2. Pass addBugg function as a props variable to the BugAdd class.
+	3. Remove the test button and its handler. Add Handler( onClick or onSubmit) to the BugAdd class.
+	4. In the handler,call the passed-in-props: the addBug function. Create a bug object by looking at the form values the traditional way, i.e using form input values.
