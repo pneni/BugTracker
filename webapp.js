@@ -5,6 +5,15 @@ var app = express();
 app.set('port',process.env.PORT || 3000);
 app.use(express.static(__dirname+ '/public'));
 
+var bugData =[
+{id :1 , priority :"P1" ,status: "Open", owner :"Raven" ,title :"App crashes on open"},
+{id:2, priority:"P2", status:"New", owner :"Eddie", title :"Misaligned border on panel"}
+];
+
+app.get('/api/bugs', function(req,res){
+	res.status(200).send(JSON.stringify(bugData));
+});
+
 app.get('/',function (req,res){
 	res.send( 'Hello World');
 });

@@ -26,6 +26,7 @@
   "homepage": "https://github.com/pneni/bugtracker#readme",
   "dependencies": {
     "babel-preset-react": "^6.3.13",
+    "body-parser": "^1.15.0",
     "express": "^4.13.4"
   }
 }

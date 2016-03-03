@@ -2,7 +2,7 @@
 Practice application on Node Express React and mongo
 
 
-"Hello World"
+"1. Hello World"
 
 Step 1: 
 
@@ -18,7 +18,7 @@ Step 2: Serve it up
 	4.Create a simple static file server to serve the index.html, which shall be placed under the directory static.
 	5.Run the server using node webapp.js and point your browser to localhost:3000.
 
-"Organize"
+"2. Organize"
 
 Step1: Split HTML and JS
 
@@ -30,7 +30,7 @@ Step1: Split HTML and JS
  	1. Move App.js to an src folder.
  	2. Install babbel-present -react(locally) and babel-cli (globally) 
 
- "Compose Components"
+ " 3. Compose Components"
 
  Step 1 : Use React createClass
 
@@ -54,7 +54,7 @@ Step 4: Dynamic composition
 	2. Pass this as the props variable bugs from the BugList class down to the BugTable class.
 	3. Create an array of <BugRow> classes in the render() function of BugTable based on the passed-in props.bugs, and replace the hard-coded <BugRow>s with this.
 
-"Dynamic Update"
+"4. Dynamic Update"
 
 Step1: Create initial State... 
 
@@ -74,3 +74,12 @@ Step3: Communicate Child to parent....
 	2. Pass addBugg function as a props variable to the BugAdd class.
 	3. Remove the test button and its handler. Add Handler( onClick or onSubmit) to the BugAdd class.
 	4. In the handler,call the passed-in-props: the addBug function. Create a bug object by looking at the form values the traditional way, i.e using form input values.
+
+"5. Data on server"
+
+Step1: GET API
+
+	1.Create an initial array of bugs in the web server.
+	2.In the web server, create an endpoint /api/bugs.
+	3.Stringify and return the array of bugs in this endpoint.
+	4.Test by typing the URL directly in the browser.
